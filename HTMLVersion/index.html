@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+  <title>Mama Stellas Restaurant</title>
+</head>
+
+<body>
+
+  <table class="logo">
+    <tr>
+      <td><img src="images/MS$20Logo.jpg" alt="Logo"/></td>
+      <td><h1 class="welcome">Benvenuto!</h1></td>
+    </tr>
+  </table>
+
+  <nav class="mainNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="construction.html">Wines</a></li>
+      <li><a href="construction.html">Services</a></li>
+      <li><a href="construction.html">What to Wear</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="slideShow">
+    <img class="mySlides" src="images/antipasti.jpg" style="height:100%">
+    <img class="mySlides" src="images/bruschetta.jpg" style="height:100%">
+    <img class="mySlides" src="images/bruschetti.jpg" style="height:100%">
+    <img class="mySlides" src="images/lasagne.jpg" style="height:100%">
+    <img class="mySlides" src="images/calamari.jpg" style="height:100%">
+    <img class="mySlides" src="images/Spaghetti_carbonara.jpg" style="height:100%">
+    <img class="mySlides" src="images/shrimps-in-spaghetti-pasta.gif" style="height:100%">
+    <img class="mySlides" src="images/pizza.jpg" style="height:100%">
+  </div>
+
+  <table class="visit">
+    <tr>
+      <td id="googleMap" style="width:50%"></td>
+      <td><img src="images/specials.jpg" alt="Specials" style="height:110%"/></td>
+    </tr>
+  </table>
+
+  <table class="menuOptions">
+    <tr>
+      <td><img src="images/takeout-2.jpg" alt="takeout" style="height:100%"/></td>
+      <td><img src="images/dinner-2.jpg" alt="dinner" style="height:100%"/></td>
+      <td><img src="images/dessert.jpg" alt="dessert" style="height:100%"/></td>
+    </tr>
+    <tr>
+      <td><h3><a href="construction.html">Order to Go</a></h3></td>
+      <td><h3><a href="construction.html">Dinner</a></h3></td>
+      <td><h3><a href="construction.html">Dessert</a></h3></td>
+    </tr>
+  </table>
+
+  <footer>
+    <table class="foot">
+      <tr>
+        <td>
+          <ul class="footerLeft">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="construction.html">Picture Album</a></li>
+            <li><a href="construction.html">Services</a></li>
+            <li><a href="construction.html">What to Wear</a></li>
+          </ul>
+        </td>
+        <td>
+          <ul class="footerLeft">
+            <li><a href="construction.html">Reservations</a></li>
+            <li><a href="construction.html">Contact Us</a></li>
+            <li><a href="construction.html">Directions</a></li>
+            <li><a href="menu.html">Menus</a></li>
+          </ul>
+        </td>
+        <td>
+          <ul class="footerLeft">
+            <li><a href="construction.html">To Go</a></li>
+            <li><a href="construction.html">Children's</a></li>
+            <li><a href="construction.html">Dinner</a></li>
+            <li><a href="construction.html">Dessert & Coffee</a></li>
+          </ul>
+        </td>
+        <td class="last">
+          <ul class="footerLeft">
+            <li><a href="construction.html">Silver Banquet</a></li>
+            <li><a href="construction.html">Bronze Banquet</a></li>
+            <li><a href="construction.html">Gold Banquet</a></li>
+            <li><a href="construction.html">Wine</a></li>
+          </ul>
+        </td>
+        <td>
+          <ul class="footerRight">
+            <li><b>Location</b></li>
+            <li>Mama Stella's Ristorante Italiano</li>
+            <li>7075 Indian Head Highway</li>
+            <li>Bryans Road, MD 20616</li>
+            <li>(one block north of Bryans Road on Rte. 210)</li>
+            <li>(301) 375-6105, (301) 375-61606, fax (301) 375-6107</li>
+            <br/>
+            <br/>
+            <li><b>Hours</b></li>
+            <li>
+              <table>
+                <tr>
+                  <td>Monday</td>
+                  <td class="time">4:00PM - 10:00PM</td>
+                </tr>
+                <tr>
+                  <td>Tuesday - Friday</td>
+                  <td class="time">11:00AM - 10:00PM</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td class="time">4:00PM - 10:00PM</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td class="time">4:00PM - 10:00PM</td>
+                </tr>
+              </table>
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+    <p class="pageClose">We Look Forward to the Pleasure of Your Company!</p>
+  </footer>
+
+</body>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(38.628178,-77.070539),
+    zoom:18,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFy8MOsrMnvrop1KcHnzs8QB0s5Bl4Zeo&callback=myMap"></script>
+
+</html>
