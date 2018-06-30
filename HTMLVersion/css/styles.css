@@ -105,9 +105,9 @@ body {
     text-decoration: none;
 }
 
-
 footer {
   background-color: #F6EBE7;
+  margin-top: 2%;
 }
 
 .footerRight ul, li {
@@ -116,6 +116,7 @@ footer {
 
 .footerRight {
   border-left: 1px solid #805854;
+  width: 100%;
 }
 
 .last {
@@ -123,7 +124,12 @@ footer {
 }
 
 .time {
+  width: 50%;
   padding-left: 10%;
+}
+
+.day {
+  width:40%;
 }
 
 .foot {
@@ -134,4 +140,45 @@ footer {
   background-color: #F1F2EA;
   text-align: center;
   padding-top: 1%;
+}
+
+.summary {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.contactInfo {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  clear: both;
+}
+
+.hours {
+  width: 100%;
+  margin: auto;
+}
+
+.pleaseContact {
+  width: 50%;
+  margin: auto;
+}
+
+.image {
+  float: right;
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
+
+.menuSelection {
+  margin: auto;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.menuSelection a {
+  color: #805854;
+  text-decoration: none;
 }
